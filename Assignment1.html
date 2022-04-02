@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+     body 
+    {
+        background: #313132; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #313132 0%, #161618 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #313132 0%,#161618 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #313132 0%,#161618 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313132', endColorstr='#161618',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        font-family: 'Montserrat', sans-serif;  
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .left
+    {
+        position: relative;
+        top: 81.1px;
+        left: 5.5%;
+        font-size: 2rem;
+
+    }
+    .mid
+    {
+        display: flex;
+        justify-content: right; 
+        
+
+    }
+    .right
+    {
+
+    }
+    .header
+    {
+        padding-top: 4rem;
+        padding-right: 70px;
+        position: sticky;
+        z-index: 30;
+    }
+    .navbar
+    {
+        display: flex;
+        isolation: isolate;
+        gap: 2rem;
+
+    }
+    .navbar li
+    {
+        display: inline-block;
+        font-size: 23px;
+        margin-top: 35px;
+    }
+    .navbar li a
+    {
+        color: #a0a0a0;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+    .navbar li a:hover, .navbar li a:active
+    {
+        text-decoration: underline;
+        text-underline-offset: 2rem;
+        color: rgb(141, 100, 13); 
+    }
+    body img
+    {
+        z-index: -1;
+        position: absolute;
+        top:-10%;
+        left: 50%;
+        transform: translateX(-50%);
+        min-height: 115%; 
+        object-fit: fill;
+    }
+    .text
+    {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        font-size: 6rem;
+    }
+    .description
+    {
+        color: #a0a0a0;
+        position: absolute;
+        top: 49%;
+        left: 5.5%;
+        font-size: 20px;
+    }
+    #Explore
+    {
+        position: absolute;
+        font-size: 23px;
+        padding: 8px 30px;
+        border: 5px solid white;
+        background-color: white;
+        color: #313132;
+        border-radius: 40px;
+    }
+    #Explore:hover
+    {
+        cursor: pointer;
+    }
+    .navbar:nth-child(3) a
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: aqua;
+    }
+    </style>
+    <header class="header">
+        
+        
+        <div class="left">
+            LOGO
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            
+        </div>
+    </header>
+<body>
+    <div class="text">
+        <h2>Lorem,ipsum</h2>
+    </div>
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt sint eos quia. Est <br>pariatur corrupti omnis minus necessitatibus fuga, ex, soluta possimus dolorum nesciut iste <br>deleniti sunt impedit reiciendis consequatur perferendis commodi sit! Lorem ipsum dolor sit <br>amet consectetur adipisicing elit. Repellat deserunt iusto alias sunt tempora rerum ullam, yu<br>debitis iure officia voluptate voluptas impedit sint in veritatis quam quaerat doloribus laboru <br>consectetur.</p>
+        <p id="Explore">Explore</p>
+    </div>
+    <img src="img/bg.png" alt="">
+    
+    
+</body>
+</html>
